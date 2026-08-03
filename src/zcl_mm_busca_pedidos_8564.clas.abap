@@ -54,3 +54,4 @@ CLASS zcl_mm_busca_pedidos_8564 IMPLEMENTATION.
     ENDLOOP.
 
   ENDMETHOD.
+ENDCLASS.
