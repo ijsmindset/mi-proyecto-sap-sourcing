@@ -11,7 +11,7 @@ CLASS zcl_mm_procesa_pedidos_8564 DEFINITION
              number     TYPE string,
              message_v1 TYPE string,
            END OF ty_message.
-    TYPES ty_messages_tt TYPE STANDARD TABLE OF ty_message WITH EMPTY KEY
+    TYPES ty_messages_tt TYPE STANDARD TABLE OF ty_message WITH EMPTY KEY.
     
     "Datos del pedido que simulan la entrada de una app
     TYPES: BEGIN OF ty_pedido,
@@ -34,7 +34,7 @@ CLASS zcl_mm_procesa_pedidos_8564 IMPLEMENTATION.
   
   METHOD procesar_pedido_mm.
   "limite estricto de presupuesto para el sourcing
-    CONSTANTS lc_mac_price TYPE decfloat34 VALUE '50000.00'.
+    CONSTANTS lc_max_price TYPE decfloat34 VALUE '50000.00'.
     
     "1 VALIDACION   real en base de datos (ABAP CLOUD standard)
     " Buscamos si el codigo de proveedor (LIFNR) existe en la CDS View liberada
