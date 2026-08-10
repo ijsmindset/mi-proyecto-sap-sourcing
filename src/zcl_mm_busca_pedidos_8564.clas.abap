@@ -2,12 +2,12 @@ CLASS zcl_mm_busca_pedidos_8564 DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
-  
+
   PUBLIC SECTION.
     INTERFACES if_oo_adt_classrun.
 ENDCLASS.
- 
- 
+
+
 CLASS zcl_mm_busca_pedidos_8564 IMPLEMENTATION.
 
    METHOD if_oo_adt_classrun~main. " metodo = accion no olvidar
@@ -17,7 +17,7 @@ CLASS zcl_mm_busca_pedidos_8564 IMPLEMENTATION.
     out->write( 'INICIO DEL BUSCADOR' ).
     out->write( '**************************************************' ).
 
-    " 1. El modelo de datos 
+    " 1. El modelo de datos
     TYPES: BEGIN OF ty_pedido,
              ebeln TYPE string, " Número de Pedido (ID)
              ekorg TYPE string, " Organización de Compras
@@ -42,7 +42,7 @@ CLASS zcl_mm_busca_pedidos_8564 IMPLEMENTATION.
 
     " Bucle For para recorrer y buscar
     LOOP AT lt_busca_pedidos INTO DATA(ls_pedido).
-    
+
       " Buscamos y comparamos si el atributo es igual al Grupo de Compras '001'
       IF ls_pedido-ekgrp = '001'.
         out->write( |[MATCH] Pedido Encontrado: { ls_pedido-ebeln }| ).
@@ -50,7 +50,7 @@ CLASS zcl_mm_busca_pedidos_8564 IMPLEMENTATION.
         out->write( |      Importe Neto : { ls_pedido-netwr } EUR| ).
         out->write( '--------------------------------------------------' ).
       ENDIF.
-      
+
     ENDLOOP.
 
   ENDMETHOD.
