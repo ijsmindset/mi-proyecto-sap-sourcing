@@ -11,18 +11,19 @@ CLASS zcl_prueba_ivan DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_prueba_ivan IMPLEMENTATION.
+
+
+CLASS ZCL_PRUEBA_IVAN IMPLEMENTATION.
+
 
   METHOD hola_mundo.
     rv_mensaje = 'Hola Ivan, esto funciona en tu cloud'.
   ENDMETHOD.
+
 
   METHOD if_oo_adt_classrun~main.
     " Llamamos al método y pasamos el resultado al objeto 'out' de la interfaz
     DATA(lv_texto) = me->hola_mundo( ).
     out->write( lv_texto ).
   ENDMETHOD.
-
 ENDCLASS.
-
-

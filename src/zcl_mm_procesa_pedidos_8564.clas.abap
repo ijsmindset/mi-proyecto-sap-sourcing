@@ -30,7 +30,10 @@ CLASS zcl_mm_procesa_pedidos_8564 DEFINITION
    PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_mm_procesa_pedidos_8564 IMPLEMENTATION.
+
+
+CLASS ZCL_MM_PROCESA_PEDIDOS_8564 IMPLEMENTATION.
+
 
   METHOD procesar_pedido_mm.
   "limite estricto de presupuesto para el sourcing
@@ -73,9 +76,4 @@ CLASS zcl_mm_procesa_pedidos_8564 IMPLEMENTATION.
     ) ).
 
   ENDMETHOD.
-
-
 ENDCLASS.
-
-
-

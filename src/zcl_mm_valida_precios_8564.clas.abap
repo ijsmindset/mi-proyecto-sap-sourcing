@@ -8,7 +8,10 @@ CLASS ZCL_MM_VALIDA_PRECIOS_8564 DEFINITION
 ENDCLASS.
 
 
-CLASS zcl_mm_valida_precios_8564 IMPLEMENTATION.
+
+CLASS ZCL_MM_VALIDA_PRECIOS_8564 IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
     DATA(lv_material)        = 'Licencias ERP Cloud'.
     DATA(lv_precio_neto)     = 75000.
@@ -29,5 +32,3 @@ CLASS zcl_mm_valida_precios_8564 IMPLEMENTATION.
     out->write( '***********************************************************' ).
   ENDMETHOD.
 ENDCLASS.
-
-

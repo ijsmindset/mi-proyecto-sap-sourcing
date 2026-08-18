@@ -8,7 +8,9 @@ CLASS zcl_mm_busca_pedidos_8564 DEFINITION
 ENDCLASS.
 
 
-CLASS zcl_mm_busca_pedidos_8564 IMPLEMENTATION.
+
+CLASS ZCL_MM_BUSCA_PEDIDOS_8564 IMPLEMENTATION.
+
 
    METHOD if_oo_adt_classrun~main. " metodo = accion no olvidar
 

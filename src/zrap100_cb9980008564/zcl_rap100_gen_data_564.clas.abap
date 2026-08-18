@@ -10,7 +10,10 @@ PUBLIC
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_rap100_gen_data_564 IMPLEMENTATION.
+
+
+CLASS ZCL_RAP100_GEN_DATA_564 IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     DATA:
@@ -56,4 +59,3 @@ CLASS zcl_rap100_gen_data_564 IMPLEMENTATION.
     out->write( |[RAP100] Demo data generated for table ZRAP100_ATRAV{ group_id }. | ).
   ENDMETHOD.
 ENDCLASS.
-

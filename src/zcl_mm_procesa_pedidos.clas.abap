@@ -9,7 +9,11 @@ CLASS ZCL_MM_PROCESA_PEDIDOS DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
+
+
 CLASS ZCL_MM_PROCESA_PEDIDOS IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
     DATA(lv_pedido_id) = '4500001234'.
     DATA(lv_centro)    = 'Madrid'.
